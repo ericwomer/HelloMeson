@@ -4,9 +4,25 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "echo",
+            "label": "Meson Configure",
             "type": "shell",
-            "command": "echo Hello"
+            "command": "meson builddir",
+            "group": "build"            
+        },
+        {
+            "label": "Ninja Build",
+            "type": "shell",
+            "command": "ninja -C builddir -j8 ",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Meson Reconfigure",
+            "type": "shell",
+            "command": "meson --reconfigure builddir",
+            "group": "build"
         }
     ]
 }
