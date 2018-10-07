@@ -1,2 +1,3 @@
 option('UNITY_BUILD', type : 'boolean', value : false, description : 'Do unity build')
 option('USE_SYSTEM_GLEW', type : 'boolean', value : false, description : 'Use system GLEW')
+option('ENABLE_VULKAN', type : 'boolean', value : false, description : 'Enable Vulkan Support')

@@ -1,4 +1,9 @@
 #include <iostream>
+#include <GL/glew.h>
+
+#if ENABLE_VULKAN
+    #include <vulkan/vulkan.h>
+#endif
 
 int main(int argc, char **argv)
 {
