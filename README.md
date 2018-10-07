@@ -1,1 +1,1 @@
-Hello Meson: Getting to know meson build system
+Hello Meson: Getting to know the meson build system
